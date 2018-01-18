@@ -15,6 +15,10 @@
 		185FC16E201029830051FA3B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 185FC16D201029830051FA3B /* main.m */; };
 		185FC178201029830051FA3B /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 185FC177201029830051FA3B /* ____Tests.m */; };
 		185FC183201029830051FA3B /* ____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 185FC182201029830051FA3B /* ____UITests.m */; };
+		185FC194201029EF0051FA3B /* DownLoadData.m in Sources */ = {isa = PBXBuildFile; fileRef = 185FC192201029EE0051FA3B /* DownLoadData.m */; };
+		185FC19720102A260051FA3B /* DCSpeedy.m in Sources */ = {isa = PBXBuildFile; fileRef = 185FC19520102A260051FA3B /* DCSpeedy.m */; };
+		185FC19C20102B690051FA3B /* CocoaSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = 185FC19B20102B690051FA3B /* CocoaSecurity.m */; };
+		185FC1A120102B940051FA3B /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 185FC1A020102B940051FA3B /* Base64.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,14 @@
 		185FC17E201029830051FA3B /* 网络请求UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "网络请求UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		185FC182201029830051FA3B /* ____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____UITests.m"; sourceTree = "<group>"; };
 		185FC184201029830051FA3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		185FC192201029EE0051FA3B /* DownLoadData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownLoadData.m; sourceTree = "<group>"; };
+		185FC193201029EF0051FA3B /* DownLoadData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownLoadData.h; sourceTree = "<group>"; };
+		185FC19520102A260051FA3B /* DCSpeedy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCSpeedy.m; sourceTree = "<group>"; };
+		185FC19620102A260051FA3B /* DCSpeedy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCSpeedy.h; sourceTree = "<group>"; };
+		185FC19A20102B690051FA3B /* CocoaSecurity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaSecurity.h; sourceTree = "<group>"; };
+		185FC19B20102B690051FA3B /* CocoaSecurity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaSecurity.m; sourceTree = "<group>"; };
+		185FC19F20102B940051FA3B /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
+		185FC1A020102B940051FA3B /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +113,9 @@
 		185FC15D201029830051FA3B /* 网络请求 */ = {
 			isa = PBXGroup;
 			children = (
+				185FC19E20102B840051FA3B /* Base64 */,
+				185FC19920102B3D0051FA3B /* CocaSecurity */,
+				185FC191201029B20051FA3B /* NetWork */,
 				185FC15E201029830051FA3B /* AppDelegate.h */,
 				185FC15F201029830051FA3B /* AppDelegate.m */,
 				185FC161201029830051FA3B /* ViewController.h */,
@@ -130,6 +145,35 @@
 				185FC184201029830051FA3B /* Info.plist */,
 			);
 			path = "网络请求UITests";
+			sourceTree = "<group>";
+		};
+		185FC191201029B20051FA3B /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				185FC193201029EF0051FA3B /* DownLoadData.h */,
+				185FC192201029EE0051FA3B /* DownLoadData.m */,
+				185FC19620102A260051FA3B /* DCSpeedy.h */,
+				185FC19520102A260051FA3B /* DCSpeedy.m */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		185FC19920102B3D0051FA3B /* CocaSecurity */ = {
+			isa = PBXGroup;
+			children = (
+				185FC19A20102B690051FA3B /* CocoaSecurity.h */,
+				185FC19B20102B690051FA3B /* CocoaSecurity.m */,
+			);
+			path = CocaSecurity;
+			sourceTree = "<group>";
+		};
+		185FC19E20102B840051FA3B /* Base64 */ = {
+			isa = PBXGroup;
+			children = (
+				185FC19F20102B940051FA3B /* Base64.h */,
+				185FC1A020102B940051FA3B /* Base64.m */,
+			);
+			path = Base64;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,9 +309,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185FC1A120102B940051FA3B /* Base64.m in Sources */,
 				185FC163201029830051FA3B /* ViewController.m in Sources */,
 				185FC16E201029830051FA3B /* main.m in Sources */,
 				185FC160201029830051FA3B /* AppDelegate.m in Sources */,
+				185FC19C20102B690051FA3B /* CocoaSecurity.m in Sources */,
+				185FC194201029EF0051FA3B /* DownLoadData.m in Sources */,
+				185FC19720102A260051FA3B /* DCSpeedy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

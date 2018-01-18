@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "DownLoadData.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [DownLoadData postLogin:^(id obj, NSError *error) {
+        
+    } userName:@"15738962856" passWord:@"123456"];
 }
 
 
